@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loja Online</h1>
+
+        <!-- Lista de Produtos -->
+        <div class="produtos">
+            <div class="produto" data-id="1" data-nome="Camiseta" data-preco="50.00">
+                <h2>Camiseta</h2>
+                <p>R$ 50,00</p>
+                <button class="adicionar">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto" data-id="2" data-nome="Calça Jeans" data-preco="120.00">
+                <h2>Calça Jeans</h2>
+                <p>R$ 120,00</p>
+                <button class="adicionar">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto" data-id="3" data-nome="Tênis" data-preco="200.00">
+                <h2>Tênis</h2>
+                <p>R$ 200,00</p>
+                <button class="adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Carrinho de Compras -->
+        <div class="carrinho">
+            <h2>Carrinho</h2>
+            <ul id="itens-carrinho">
+                <!-- Itens do carrinho serão adicionados aqui via JavaScript -->
+            </ul>
+            <p>Total: R$ <span id="total">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
